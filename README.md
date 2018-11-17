@@ -7,13 +7,19 @@ Esta herramienta tiene como intención generar consiencia de lo fácil que es en
 
 ## Requerimientos
 - Node.js
-- MongoDB.
+- MongoDB
 
 ## Instalación
 Para instalar esta herramienta, simplemente basta con tener NPM (de Nodejs) e instalar las dependencias de el archivo *packages.json*, esto se cumple ingresando:
 
 ```
 npm install
+```
+
+Pasar el código TypeScript a Javascript:
+
+```
+npm build
 ```
 
 Y para correr la aplicación:
@@ -25,7 +31,7 @@ npm start
 ```
 
 # Video
-https://www.youtube.com/watch?v=ID
+https://youtu.be/Ep-AofXdyT0
 
 # Ejemplo
 Esta página es de prueba, se recomienda usar su propio servidor para un uso privado.
