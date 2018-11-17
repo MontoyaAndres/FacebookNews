@@ -27,6 +27,10 @@ npm start
 # Video
 https://www.youtube.com/watch?v=ID
 
+# Ejemplo
+Esta página es de prueba, se recomienda usar su propio servidor para un uso privado.
+https://facebooknews.now.sh/?header=Iv%C3%A1n%20Duque%20M%C3%A1rquez:%20rendici%C3%B3n%20de%20cuentas%20de%20100%20d%C3%ADas%20de%20Gobierno&image=https://www.elespectador.com/sites/default/files/ivan_duque_marquez_rendicion_sig.jpeg&url=https://www.elespectador.com/noticias/politica/ivan-duque-marquez-rendicion-de-cuentas-de-100-dias-de-gobierno-articulo-824146
+
 # Tengo preguntas!
 Por favor visita https://github.com/MontoyaAndres/FacebookNews/issues
 
