@@ -3,7 +3,7 @@ Simula una nueva sección de Facebook News (Facebook noticias) para engañar a t
 
 ![Alt text](https://i.imgur.com/jy9I439.png "FacebookNews")
 
-Esta herramienta tiene como intención generar consiencia de lo fácil que es engañar mediante el uso de un tipo de ingeniería social, caracterizado por intentar adquirir información confidencial de forma fraudulenta (como puede ser una contraseña, información detallada sobre tarjetas de crédito u otra información bancaria). El cibercriminal, conocido como phisher, se hace pasar por una persona o empresa de confianza en una aparente comunicación oficial electrónica, por lo común un correo electrónico, o algún sistema de mensajería instantánea o incluso utilizando también llamadas telefónicas.
+Esta herramienta tiene como intención generar consciencia de lo fácil que es engañar mediante el uso de un tipo de ingeniería social, caracterizado por intentar adquirir información confidencial de forma fraudulenta (como puede ser una contraseña, información detallada sobre tarjetas de crédito u otra información bancaria). El cibercriminal, conocido como phisher, se hace pasar por una persona o empresa de confianza en una aparente comunicación oficial electrónica, por lo común un correo electrónico, o algún sistema de mensajería instantánea o incluso utilizando también llamadas telefónicas.
 
 ## Requerimientos
 - Node.js
