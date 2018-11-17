@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <title>Data</title>
+</head>
+
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">User</th>
+        <th scope="col">Password</th>
+        <th scope="col">😈👌</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% users.forEach(function(elem, index) { %>
+      <tr>
+        <th scope="row">
+          <%= index %>
+        </th>
+        <th>
+          <%= elem.user %>
+        </th>
+        <th>
+          <%= elem.password %>
+        </th>
+        <th>
+          <a class="btn btn-outline-danger" href="/data/<%=elem.id %>">Delete</a>
+        </th>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+
+</html>
