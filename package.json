@@ -18,7 +18,7 @@
   },
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "rm -r dist/ && tsc && cp -r src/views dist/",
+    "build": "rm -rf dist/ 2> /dev/null && tsc && cp -r src/views dist/",
     "start": "PORT=80 node dist/index.js"
   }
 }
