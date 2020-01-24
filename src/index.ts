@@ -17,8 +17,9 @@ app
     const { header, image, url } = request.query;
 
     if (header && image) {
+      const currentDate = new Date().getFullYear();
       dynamicUrl = url;
-      response.render("index", { header, image });
+      response.render("index", { header, image, currentDate });
       return;
     }
 
